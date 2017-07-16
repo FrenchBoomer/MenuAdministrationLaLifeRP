@@ -1,7 +1,7 @@
 Auteur : Walter White
 
 
-Description : C'est un menu administrateur pour les serveur basé sur la source La_LifeRP
+Description : C'est un menu administrateur pour les serveur basÃ© sur la source La_LifeRP
 
 
 
@@ -23,6 +23,26 @@ AJOUTER CETTE LIGNE AU FICHIER FIVEMENU_CLIENT.LUA LIGNE 1131
 if User.group == "owner" then
 			VMenu.AddFunc(98, "Menu Administrateur", "vmenuamdin:Admin", {User.group}, lang.common.access)
 		end
+		
+		
+----ETAPE 3----
+AJOUTEZ "admin = false," a la ligne 96 du fivemenu_client.lua a la suite de 
+
+police = false
+repertoire = false,
+telephone = false,
+animations = false,
+jobs = false,
+
+Puis ajoutez "and VMenu.admin  == false" a la ligne 1165 a la suite des autres sur la meme ligne en laissant bien le then a la fin
+
+Recommencer la meme chose a la ligne 1905 du fivemenu_client.lua
+
+ensuite dans le fivemenu_functions.lua a la ligne 119 ajoutez "VMenu.admin = false" a la suite des autres citer si dessous
+
+VMenu.police = false
+VMenu.telephone = false
+VMenu.animations = false
 
 
 Voila le menu administrateur est fonctionnel :) Enjoy =P
