@@ -1,0 +1,31 @@
+Auteur : Walter White
+
+
+Description : C'est un menu administrateur pour les serveur basé sur la source La_LifeRP
+
+
+
+
+----ETAPE 1----
+
+PLACER LE FICHIER MENU_ADMIN.CILENT DANS LE DOSSIER fivemenu
+
+AJOUTER LA LIGNE 
+client_script 'menu_admin.lua' 
+DANS LE FICHIER __resource.lua
+
+
+
+----ETAPE 2----
+
+AJOUTER CETTE LIGNE AU FICHIER FIVEMENU_CLIENT.LUA LIGNE 1131
+
+if User.group == "owner" then
+			VMenu.AddFunc(98, "Menu Administrateur", "vmenuamdin:Admin", {User.group}, lang.common.access)
+		end
+
+
+Voila le menu administrateur est fonctionnel :) Enjoy =P
+
+
+
