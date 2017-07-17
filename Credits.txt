@@ -5,3 +5,5 @@
 #   client.lua   #
 #     2017       #
 ##################
+
+Merci a TontonSheitan pour l'ajout des armes avec munitions illimiter et no rechargement ainsi que la possibilite de supprimer les véhicules =) 
